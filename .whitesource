@@ -21,20 +21,7 @@
     "enableRenovate": true,
     "extends": [
       "config:base",
-	  "github>whitesource/merge-confidence:beta"
-    ],
-	"packageRules": [
-		/* Automerge High and Very High Confidence updates */
-		{
-		  "matchConfidence": ["high", "very high"],
-		  "matchUpdateTypes": ["patch", "minor"],
-		  "automerge": true
-		},
-		/* Group High and Very High Confidence updates */
-		{
-		  "groupName": "high merge confidence",
-		  "matchConfidence": ["high", "very high"]
-		}
-	]
+      "github>whitesource/merge-confidence:beta"
+    ]
   }
 }
